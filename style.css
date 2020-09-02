@@ -1,0 +1,277 @@
+* {
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 15px;
+}
+
+table, th, td {
+    margin: 12px 0;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+th, td {
+    padding: 10px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.navbar-item:only-child {
+    margin: 0 auto;
+}
+
+.navbar-item {
+    display: flex;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+.navbar-link {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+.navbar-link:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    background-color: #000000;
+    color: #ffffff;
+    margin-bottom: 15px;
+
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: grayscale();
+}
+
+.header-item {
+    max-width: 750px;
+}
+
+.figure {
+    object-fit: cover;
+}
+
+.footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.footer p, a, li, ul {
+    margin: 5px;
+    color: #ffffff;
+    list-style: none;
+}
+
+.header-title {
+    background-color: black;
+    font-size: 10vh;
+    margin: 0;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: 600;
+}
+
+.header-subtitle {
+    background-color: black;
+    font-size: 3vh;
+    margin: 0;
+    padding: 20px;
+    padding-top: 0;
+    font-weight: 600;
+}
+
+.title-black {
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.title {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    margin-top: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-1by1 {
+    width: 100%;
+    padding: 15px;
+}
+
+.col-1by2 {
+    width: 50%;
+    padding: 15px;
+}
+
+.col-1by3 {
+    width: 33%;
+    padding: 15px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.justify-text {
+    text-align: justify;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.align-bottom {
+    align-items: flex-end;
+}
+
+.bw {
+    filter: grayscale();
+}
+
+.img-fitdiv {
+    width: 100%;
+    height: 100%;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing: border-box;
+}
+
+.button {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 0;
+    font-weight: 700;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: medium;
+}
+
+@media screen and (max-width: 750px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .col-1by1 {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .col-1by2 {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .col-1by3 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .header-title {
+        font-size: 5vh;
+        padding: 20px;
+    }
+
+    .header-subtitle {
+        font-size: 2.5vh;
+    }
+
+    footer .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
